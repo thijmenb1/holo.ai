@@ -12,7 +12,7 @@
     "express": "^4.17.1",
     "body-parser": "^1.19.0",
     "alexa-sdk": "^1.0.4"
-    }
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/thijmenb1/holo.ai.git"
