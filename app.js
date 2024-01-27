@@ -17,13 +17,25 @@ const handlers = {
   },
 };
 
+// Use the `body-parser` middleware to parse incoming requests as JSON
+app.use(bodyParser.json());
+
+// Endpoint to handle incoming Alexa requests
 app.post('/alexa', (req, res) => {
+  // Create an Alexa handler with the request and response objects
   const alexa = Alexa.handler(req.body, res);
-  alexa.appId = process.env.APP_ID; // Set your skill's App ID here
+
+  // Set your skill's App ID here
+  alexa.appId = process.env.APP_ID;
+
+  // Register your Alexa handlers
   alexa.registerHandlers(handlers);
+
+  // Execute the Alexa handler
   alexa.execute();
 });
 
+// Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
