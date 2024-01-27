@@ -1,5 +1,5 @@
 {
-3    "name": "holo",
+3    name: "holo",
 4    "version": "1.0.0",
 5    "description": "",
 6    "scripts": {
