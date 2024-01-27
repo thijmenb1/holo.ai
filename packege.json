@@ -1,16 +1,21 @@
 {
-    "name": "your-alexa-skill-server",
-    "version": "1.0.0",
-    "description": "A simple Alexa skill server",
-    "main": "app.js",
-    "scripts": {
-      "start": "node app.js"
-    },
-    "author": "Your Name",
-    "license": "MIT",
-    "dependencies": {
-      "express": "^4.17.1",
-      "body-parser": "^1.19.0",
-      "alexa-sdk": "^1.0.4"
-    }
-  }
+3    "name": "holo.ai",
+4    "version": "1.0.0",
+5    "description": "",
+6    "scripts": {
+7        "build": "echo \"No build specified\" && exit 1",
+8        "test": "echo \"No test specified\" && exit 1",
+9        "start": "node index.js"
+10    },
+11    "repository": {
+12        "type": "git",
+13        "url": "git+https://github.com/thijmenb1/holo.ai.git"
+14    },
+15    "author": "",
+16    "license": "ISC",
+17    "bugs": {
+18        "url": "https://github.com/thijmenb1/holo.ai/issues"
+19    },
+20    "homepage": "https://github.com/thijmenb1/holo.ai#readme"
+21}
+22 
